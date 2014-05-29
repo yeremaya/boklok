@@ -11,9 +11,9 @@ var stylus = require("stylus"),
 
 var	server = require("http").createServer(app);
 
-
+var port = process.env.PORT || 5000; //for Heroku
 //------ CONFIG---------
-	app.set("port", 80);
+	app.set("port", port);
 	app.set("views", __dirname + "/app/server/views");
 	app.locals.pretty = true; // outputs html with indents and whitespace... not sure if only for jade or also swig
 	//app.use(express.bodyParser()); // there is some vulnerability with bodyparser and unlimited temp files when forms are submitted...
