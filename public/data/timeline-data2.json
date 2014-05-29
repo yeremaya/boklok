@@ -1,0 +1,27 @@
+{
+    "timeline":
+    {
+        "headline":"The Amazon effect",
+        "type":"default",
+        "startDate":"2000",
+        "text":"<div style='font-size:16px; font-weight:normal; color:#74736c;'>How Amazon has changed the world of commerce</div><br /><div><img src='_media/smile.png'></div>",
+        "asset":
+        {
+            "media":"",
+            "credit":"",
+            "caption":""
+        },
+        "date": [
+        {
+            "startDate":"2004",
+            "headline":"How do purchases get from your virtual shopping cart to the doorstep? There are two ways.",
+            "text":"",
+            "asset":
+            {
+                "media":"",
+                "credit":"",
+                "caption":""
+            }
+        }]
+    }
+}

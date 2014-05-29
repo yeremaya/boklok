@@ -1,0 +1,75 @@
+//dependencies, requires, variable declaration
+
+var stylus = require("stylus"),
+	bootstrap = require("bootstrap3-stylus"),
+	path = require("path"),
+	mongoose = require("mongoose"),
+	nib = require("nib"),
+	express = require("express"),
+	app = express();
+//not all of the requires are needed here right now, but I guess it doesn't hurt
+
+var	server = require("http").createServer(app);
+
+
+//------ CONFIG---------
+	app.set("port", 80);
+	app.set("views", __dirname + "/app/server/views");
+	app.locals.pretty = true; // outputs html with indents and whitespace... not sure if only for jade or also swig
+	//app.use(express.bodyParser()); // there is some vulnerability with bodyparser and unlimited temp files when forms are submitted...
+									//parses json, x-www-form-urlencoded, and multipart/form-data .... multi-something and other lower level methods are better aparently
+	app.use(express.cookieParser());
+	app.use(express.bodyParser()); // --> equivalent to the following three: app.use(express.json()); app.use(express.urlencoded()); app.use(express.multipart()); ----- without bodyParser I can't access the req.body or req.param in the code how braitsch ahs written it ------ also for security reasons if the app doesnt need fileupload just use express.json()); app.use(express.urlencoded()
+	app.use(express.methodOverride());
+	app.use(express.session({"secret" : "wtf-that-secret-though"}));
+	//app.use(stylus.middleware)
+
+	function compile(str, path){ //possibility to add debugging capabilities for firebug stylus plugin here... also couple other good options in API docs
+		return stylus(str)
+			.set("filename", path)
+			.set("compress", false) //false = not minified; true = minified;
+			.use(nib()); //provides additional cs features... aber muss noma nachschaun was überhaupt haha
+	};
+	app.use(stylus.middleware({
+		src		: __dirname + "/public",
+		dest	: __dirname + "/public",
+		compile	: compile
+	})); //have to refresh twice to make a newly created .styl file load in the browser... any way to change that? but in the end it's just a one time thing whenever I change the stylesheet
+
+	app.use(express.static(__dirname + "/public")); //guess it's a good idea to always put this one last
+//-------- END CONFIG -------------
+
+
+//runs in development environment by default apparently (at least when I run it on my pc)
+app.configure('development', function(){
+	app.use(express.errorHandler({dumpExceptions: true, showStack: true}));
+	console.log("Runs in DEVELOPMENT environment");
+});
+
+//can run in prod environment throug command line: NODE_ENV=prod node app.js (not 100% sure if the command is correct)
+app.configure('production', function(){
+	app.use(express.errorHandler({dumpExceptions: false, showStack: false}));
+	console.log("runs in PRODUCTION environment");
+});
+
+process.on("uncaughtException", function (err) {
+	console.log("uncaught exception jogi: " + err);
+	process.exit(0); // terminates the execution of app.js on every error: eg.: unknownfunctionC(); but without process.exit(1) it continues after eg.: unknownfunctionB();
+	//terminates always on syntax errors or other harsh mistakes, also without process.exit(1);
+});
+
+require("./server/router.js")(app); //(app) parameter not neccessary if removed on both ends... don't know what difference is though --> better keept it
+
+server.listen(app.get("port"), function(){
+	console.log("server listening on port " + app.get("port"));
+});
+
+/*io.sockets.on("connection", function(socket) {
+	console.log("io.sockets.on connection active");
+	socket.on("send message", function(data){
+		var username = "";
+		io.sockets.emit("new message", username + ": " + data); //sends to everyone including me
+		//socket.broadcast.emit("new message", data); //sends to everyone except me
+	});
+});
+*/

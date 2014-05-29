@@ -1,0 +1,47 @@
+{
+  "name": "MEAN-stylus-bootstrap",
+  "version": "0.0.1",
+  "description": "Boilerplate for Angular, Stylus, Express, MongoDB",
+  "keywords": [
+    "scaffold",
+    "generator",
+    "framework",
+    "boilerplate",
+    "mongoose",
+    "bootstrap",
+    "skeleton",
+    "express",
+    "mongodb",
+    "crud",
+    "rest",
+    "mvc"
+  ],
+  "homepage": "https://github.com/sahat/generator-ember-sass-express",
+  "bugs": "https://github.com/sahat/generator-ember-sass-express/issues",
+  "author": "Sahat Yalkabov",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sahat/generator-ember-sass-express.git"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "node_modules/.bin/mocha test --reporter spec"
+  },
+  "dependencies": {
+    "express": "~3.4.7",
+    "mongoose": "~3.8.4",
+    "stylus": "~0.45.1",
+    "bootstrap3-stylus": "~0.1.0",
+    "nib": "~1.0.2",
+    "passport": "*",
+    "passport-local": "*",
+    "bcrypt": "*",
+    "sequelize": "~1.7.0-rc2",
+    "sqlite3": "~2.2.0",
+    "mysql": "~2.0.1"
+  },
+  "engines": {
+    "node": ">= 0.10.28"
+  },
+  "license": "MIT"
+}
