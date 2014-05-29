@@ -11,7 +11,7 @@ var stylus = require("stylus"),
 
 var	server = require("http").createServer(app);
 
-var port = process.env.PORT || 5000; //for Heroku
+var port = Number(process.env.PORT || 5000); //for Heroku
 //------ CONFIG---------
 	app.set("port", port);
 	app.set("views", __dirname + "/app/server/views");
