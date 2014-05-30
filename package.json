@@ -1,5 +1,5 @@
 {
-  "name": "MEAN-stylus-bootstrap",
+  "name": "Boklok",
   "version": "0.0.1",
   "description": "Boilerplate for Angular, Stylus, Express, MongoDB",
   "keywords": [
@@ -16,16 +16,16 @@
     "rest",
     "mvc"
   ],
-  "homepage": "https://github.com/sahat/generator-ember-sass-express",
-  "bugs": "https://github.com/sahat/generator-ember-sass-express/issues",
-  "author": "Sahat Yalkabov",
+  "homepage": "",
+  "bugs": "",
+  "author": "Jörg Hronek",
   "repository": {
     "type": "git",
-    "url": "git://github.com/sahat/generator-ember-sass-express.git"
+    "url": "https://github.com/yeremaya/boklok"
   },
   "scripts": {
-    "start": "node app.js",
-    "test": "node_modules/.bin/mocha test --reporter spec"
+    "start": "node server.js",
+    "test": ""
   },
   "dependencies": {
     "express": "~3.4.7",
