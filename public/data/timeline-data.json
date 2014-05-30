@@ -1,68 +1,89 @@
 {
     "timeline":
     {
-        "headline":"Boklok is Born",
+        "headline":"The story of Boklok",
         "type":"default",
-        "startDate":"2007",
-        "text":"<div style='font-size:16px; font-weight:normal; color:#74736c;'>How Amazon has changed the world of commerce</div><br /><div><img src='_media/smile.png'></div>",
+        "startDate":"",
+        "text":"This timeline tells the story of Boklok from its beginnings in Sweden and follows its development to the present in Finland",
         "asset":
         {
             "media":"",
             "credit":"",
             "caption":""
         },
+
         "date": [
         {
-                "startDate":"1993",
-                "headline":"Boklok Idea is born",
-                "text":"The origin of the idea goes back to 1993, to a fair for private homes in Karlskrona, Sweden. A regional manager of Skanska and a senior marketing director of IKEA met there because of an ongoing collaboration where IKEA should furnish example domiciles for Skanska. Maybe influenced by the actual event they started talking about the current market situation in Sweden and how constructing private homes had become unaffordable for huge parts of the Swedish society. Combining Skanska’s and IKEA’s competences to provide affordable housing sounded like a promising business idea to those managers. How the evolution of the idea evolved between 1993 and 1995 is unclear, but by 1995 this opportunity became clearer. IKEA and Skanska were already collaborating at that time and the venture, which was to become Boklok, was officially established during a meeting on December 19th 1995. Top management supported the idea from a very early stage (Boklok Sweet Boklok, 2007).",
-                "asset":
-                {
-                    "media":"../img/Schorling_Kamprad_utsparad_440x440.jpg",
-                    "credit":"testCREDIT",
-                    "caption":"testcaption"
-                }
-
-            },
-
-          {
-                "startDate":"2008",
-            "headline":"Buying a fucking shit through <b>Amazon</b>",
-                "text":"",
-                "asset":
-                {
-                    "media":"_media/fulfillment1a.png",
-              "credit":"",
-                    "caption":"The vacuum order is placed, processed and shipped completely by Amazon."
-                }
-            },
-
-        {
-                "startDate":"2012",
-            "headline":"Buying a vacuum through an alliance between<br /><b>Amazon and GoVacuum</b>",
-                "text":"",
-                "asset":
-                {
-                    "media":"_media/fulfillment1b.png",
-              "credit":"",
-                    "caption":"The vacuum, originally supplied by GoVacuum, is ordered, processed and shipped by Amazon."
-                }
-            },
-
-          {
-                "startDate":"2016",
-            "headline":"What is the Amazon effect?",
-                "text":"<div style='font-size:20px; line-height:115%; font-weight:normal; color:#74736c;'><div style='font-size:24px; color:#9b164f;'><i>Consumers</i><br/ ></div><div>Amazon and its Marketplace sellers are a one-stop shop for a broad range of merchandise making products easier to find. The best deals are often faster and cheaper than the alternatives.<br/ ><br /><div style='font-size:24px; color:#9b164f;'><i>Amazon</i><br/ ></div><div>By fusing their businesses, both Amazon and independent sellers can attract more customers and improve profit margins. But doing so can create risks for Amazon and third-party sellers.</div>"
-            },
-
-        {
-                "startDate":"2024",
-                "headline":"Amazon.com Fulfillment",
-                "asset":
-                {
-                    "media":"http://interactive.ftdata.co.uk/features/2012-06-01_amazon/pages/receipts.html"
-                }
+            "startDate":"1993",
+            "headline":"Boklok Idea is born",
+            "text":"The origin of the idea goes back to 1993, to a fair for private homes in Karlskrona, Sweden. A regional manager of Skanska and a senior marketing director of IKEA met there because of an ongoing collaboration where IKEA should furnish example domiciles for Skanska. Maybe influenced by the actual event they started talking about the current market situation in Sweden and how constructing private homes had become unaffordable for huge parts of the Swedish society. Combining Skanska’s and IKEA’s competences to provide affordable housing sounded like a promising business idea to those managers (Boklok Sweet Boklok, 2007).",
+            "asset":
+            {
+                "media":"",
+                "credit":"",
+                "caption":""
             }
+        },
+
+        {
+            "startDate":"1995",
+            "headline":"Boklok venture is officially established",
+            "text":"How the evolution of the idea evolved between 1993 and 1995 is unclear, but by 1995 this opportunity became clearer. IKEA and Skanska were already collaborating at that time and the venture, which was to become Boklok, was officially established during a meeting on December <strong>19th 1995</strong>. Top management supported the idea from a very early stage (Boklok Sweet Boklok, 2007).",
+            "asset":
+            {
+                "media":"../img/Schorling_Kamprad_utsparad_440x440.jpg",
+                "credit":"",
+                "caption":"IKEA founder Ingvar Kamprad and Skanska’s chairman of the board Melker Schörling"
+            }
+        },
+
+        {
+            "startDate":"1997",
+            "headline":"The first Boklok homes are built in Sweden",
+            "text":"",
+            "asset":
+            {
+                "media":"../img/swedish flag.jpg",
+                "credit":"",
+                "caption":"Swedish flag"
+            }
+        },
+
+        {
+            "startDate":"2002",
+            "headline":"Boklok expands to Norway",
+            "text":"",
+            "asset":
+            {
+                "media":"../img/norwegian flag.jpg",
+                "credit":"",
+                "caption":"Norwegian flag"
+            }
+        },
+
+        {
+            "startDate":"2003",
+            "headline":"The first Boklok homes are built in Finnland",
+            "text":"",
+            "asset":
+            {
+                "media":"../img/finnish flag.jpg",
+                "credit":"",
+                "caption":"Finnish flag"
+            }
+        },
+
+        {
+            "startDate":"2006",
+            "headline":"Boklok is discontinued in Finland",
+            "text":"After 5 projects in Helsinki, Tuusula, Espoo, Porvoo and Vantaa Boklok was discontinued in Finland. Reasons therefore were",
+            "asset":
+            {
+                "media":"../img/finnish flag.jpg",
+                "credit":"",
+                "caption":"Finnish flag"
+            }
+        }
         ]
     }
 }
